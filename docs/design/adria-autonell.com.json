@@ -1,0 +1,59 @@
+{
+  "source": "https://adria-autonell.com/ca",
+  "tokens": {
+    "spacing": { "scale": [4, 8, 12, 16, 24, 40, 112], "base_unit": 4 },
+    "typography": {
+      "families": ["Newsreader Variable", "IBM Plex Sans", "IBM Plex Mono"],
+      "scale": [
+        { "role": "hero", "size": "136px", "weight": "500", "family": "Newsreader Variable" },
+        { "role": "h2", "size": "36px", "weight": "500", "family": "Newsreader Variable" },
+        { "role": "h3", "size": "20px", "weight": "500", "family": "Newsreader Variable" },
+        { "role": "body", "size": "16px", "weight": "400", "family": "IBM Plex Sans" },
+        { "role": "meta", "size": "12px", "weight": "400", "family": "IBM Plex Mono" }
+      ]
+    },
+    "colors": [
+      { "role": "background", "value": "#F6F1E7" },
+      { "role": "surface", "value": "#EDE6D8" },
+      { "role": "rule", "value": "#D6CCB9" },
+      { "role": "text-primary", "value": "#1F1D1A" },
+      { "role": "text-secondary", "value": "#46423C" },
+      { "role": "text-meta", "value": "#67615A" },
+      { "role": "accent", "value": "#B0390F" }
+    ],
+    "radius": ["4px", "9999px"],
+    "shadows": [],
+    "image_ratios": [{ "usage": "project screenshot", "ratio": "1.6:1" }],
+    "grid": { "max_width": "1152px", "columns": 12, "gutter": "32px" }
+  },
+  "taste": [
+    {
+      "name": "Accent as a reading marker",
+      "trigger": "When a content-heavy personal site needed an identity colour",
+      "decision": "Chose to confine #B0390F to section numbers, underlines and active states over a brand-coloured background or buttons",
+      "reason": "Because a colour that appears rarely tells the reader where they are each time it does appear",
+      "evidence": ["accent <1% of visible area", "24 text uses, 0 large fills", "primary button is ink #1F1D1A, not accent"]
+    },
+    {
+      "name": "Paper without depth",
+      "trigger": "When grouping status panels, timelines and project rows",
+      "decision": "Chose two flat surface tones and 1px rules over elevated cards with shadows",
+      "reason": "Because the notebook metaphor collapses the moment anything floats above the page",
+      "evidence": ["0 box-shadows", "#EDE6D8 surface covers 24.7% of area", "process grid uses 1px #D6CCB9 gaps"]
+    },
+    {
+      "name": "Metadata speaks monospace",
+      "trigger": "When labelling dates, numbers, versions and tags",
+      "decision": "Chose IBM Plex Mono at 12px over small sans-serif captions",
+      "reason": "Because a log-like voice separates annotation from narrative and fits a systems-administration profile",
+      "evidence": ["128 mono elements", "12px is the most frequent size (80)"]
+    },
+    {
+      "name": "The name owns the first screen",
+      "trigger": "When composing the hero",
+      "decision": "Chose a 136px serif name with a 0.6em asymmetric indent over a moderate headline scale with a photo",
+      "reason": "Because the visitor's first question is who this is, and a typographic answer avoids stock imagery",
+      "evidence": ["h1 136px / -4.76px tracking", "jump from 36px to 136px", "no hero image"]
+    }
+  ]
+}
