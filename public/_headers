@@ -1,0 +1,13 @@
+# Cabeceras HTTP para Cloudflare Pages (https://developers.cloudflare.com/pages/configuration/headers/)
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests
+  Strict-Transport-Security: max-age=63072000; includeSubDomains
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Cross-Origin-Opener-Policy: same-origin
+  X-Frame-Options: DENY
+
+# Archivos con hash en el nombre: se pueden cachear un año sin riesgo.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable

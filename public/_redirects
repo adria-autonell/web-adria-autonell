@@ -1,0 +1,4 @@
+# Redirecciones de Cloudflare (https://developers.cloudflare.com/workers/static-assets/redirects/)
+# El catalán vive en la raíz; las URLs antiguas con /ca se redirigen de forma permanente.
+/ca     /         301
+/ca/*   /:splat   301

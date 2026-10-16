@@ -1,0 +1,15 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  // Debe coincidir con el nombre del proyecto en Cloudflare (Workers & Pages).
+  "name": "web-adria-autonell",
+  "compatibility_date": "2026-10-01",
+  // Web 100 % estática: Cloudflare sirve dist/ directamente, sin código de servidor.
+  "assets": {
+    "directory": "./dist",
+    // /es sirve es.html y /es/privacy sirve es/privacy.html, sin extensión ni barra final.
+    "html_handling": "auto-trailing-slash",
+    // Rutas inexistentes: dist/404.html con estado 404.
+    "not_found_handling": "404-page"
+  },
+  "observability": { "enabled": false }
+}
